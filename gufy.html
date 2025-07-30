@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>موقعي البسيط</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.css.map">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.min.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.css.map" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.min.css" class="rel href">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.min.css.map" class="rel href">
+    <style>
+        /* الخلفية */
+        .background {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-image: url("https://th.bing.com/th/id/R.9a5d039353219040e401ce0c4ef74c6f?rik=TnOfzxLy80SULw&pid=ImgRaw&r=0");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        /* الجسم */
+        body {
+            background-color: #f0f0f0;
+            font-family: Tahoma, sans-serif;
+            padding: 20px;
+            margin: 0;
+            direction: rtl;
+        }
+
+        /* المحتوى */
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 40px auto;
+            background: rgba(255 255 255 / 0.9);
+            border-radius: 15px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* العنوان */
+        h3 {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* الزر */
+        button {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            min-width: 180px;
+        }
+
+        button:hover {
+            background-color: #1e47ff;
+        }
+
+        /* تحسين مظهر الزر والمحتوى على شاشات صغيرة */
+        @media (max-width: 480px) {
+            .content {
+                margin: 20px 10px;
+                padding: 20px 15px;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+
+            button {
+                width: 100%;
+                padding: 15px 0;
+                font-size: 1.2rem;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h3>
+            👋 Bienvenue sur votre site dédié aux mathématiques, où apprendre devient un vrai plaisir !<br>
+            Ici, vous trouverez une large variété de leçons claires et bien expliquées, conçues pour tous les niveaux,
+            du plus simple au plus avancé.<br>
+            📘 Leçons en français – ✅ Exercices corrigés – 🎯 Résumés efficaces – 🧠 Astuces de compréhension<br><br>
+            Que vous soyez collégien, lycéen ou simplement curieux, vous êtes au bon endroit !<br>
+            Chaque chapitre est structuré pour faciliter la compréhension, progresser à votre rythme et réussir vos
+            examens avec confiance.<br><br>
+            🎓 Explorez. Apprenez. Progressez.<br>
+            👉 Le monde des maths n’a jamais été aussi accessible !
+        </h3>
+        <button onclick="window.location.href='واجهة الاختيار 2 .html'">Cliquez ici</button>
+    </div>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.js.map"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.min.js.map"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.js"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.js.map"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.min.js"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.min.js.map"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.js"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.js.map"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.min.js.map"></script>
+</body>
+
+</html>

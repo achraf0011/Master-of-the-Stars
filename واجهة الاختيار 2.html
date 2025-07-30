@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قوائم متعددة لكل صورة</title>
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.css.map">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-grid.rtl.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-reboot.rtl.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap-utilities.rtl.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.min.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.css.map" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.min.css" class="rel href">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\css\bootstrap.rtl.min.css.map" class="rel href">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url("https://lh6.googleusercontent.com/proxy/P4k1PRxVGKYySxIfStfCjeJ07-ZbzPOGzrPNyW0fYP5dyl6QAq71-kAI5AkACH0KwnYx_2KMmd4H3UTK4UmvJ3fliIGwewuYnQI6rzHR5wu2jX23u5FNGrHiOCwL=s0-d");
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.4;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: black;
+      padding: 10px;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .image-box {
+      position: relative;
+      width: 90%;
+      max-width: 400px;
+      
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 460px;
+      border-radius: 15px;
+      cursor: pointer;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      min-width: 90%;
+      font-size: 1.2em;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      padding: 12px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .menu li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+
+    .menu li a:hover {
+      color: #0077cc;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      white-space: nowrap;
+      z-index: 200;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .image-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background"></div>
+  <h1>مرحبًا بك أيها التلميذ العزيز!</h1>
+  <h2>
+    أنت في المكان المناسب لتعلّم الرياضيات. هذا الموقع مُصمَّم خصيصًا من أجلك، فهو يجمع جميع دروس الرياضيات لجميع
+    المستويات الدراسية في المغرب. <br>احتر مستواك الدراسي من الصور أدناه
+  </h2>
+
+  <div class="image-container">
+
+    <div class="image-box" onclick="toggleMenu(this)">
+      <img src="WhatsApp Image 2025-07-21 à 20.10.13_a71c28ab (2).jpg" alt="صورة 1">
+      <div class="menu">
+        <ul>
+          <li>جدع مشترك
+            <ul class="submenu">
+              <li><a href="الجدع مشترك  علمي.html">علمي</a></li>
+              <li><a href="الجدع مشترك ادبي .html">أدبي</a></li>
+            </ul>
+          </li>
+          <li>اولى باكالوريا
+            <ul class="submenu">
+              <li><a href="1bacSX.html">علوم تجريبية</a></li>
+              <li><a href="1bacSM.html">علوم رياضية</a></li>
+            </ul>
+          </li>
+          <li>التانية باكالوريا
+            <ul class="submenu">
+              <li><a href="2bacSM.html">علوم رياضيات</a></li>
+              <li><a href="2bacSPC.html">علوم فيزيائية</a></li>
+              <li><a href="2bacSVT.html">علوم الحياة والأرض</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="image-box" onclick="toggleMenu(this)">
+      <img src="WhatsApp Image 2025-07-22 à 16.15.13_cd646877.jpg" alt="صورة 2">
+      <div class="menu">
+        <ul>
+          <li><a href="الاولى اعدادي.html">الأولى إعدادي</a></li>
+          <li><a href="التانية اعدادي.html">الثانية إعدادي</a></li>
+          <li><a href="التالت اعدادي.html">الثالثة إعدادي</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="image-box" onclick="toggleMenu(this)">
+      <img src="WhatsApp Image 2025-07-22 à 16.20.43_1679fe9f.jpg" alt="صورة 3">
+      <div class="menu">
+        <ul>
+          <li><a href="الرابع ابتدائي.html">الرابع ابتدائي</a></li>
+          <li><a href="الخامس ابتدائي.html">الخامس ابتدائي</a></li>
+          <li><a href="السادس ابتدائي.html">السادس ابتدائي</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleMenu(element) {
+      const openMenus = document.querySelectorAll('.menu');
+      openMenus.forEach(menu => {
+        if (menu !== element.querySelector('.menu')) {
+          menu.style.display = 'none';
+        }
+      });
+
+      const menu = element.querySelector('.menu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function (event) {
+      const isClickInside = event.target.closest('.image-box');
+      if (!isClickInside) {
+        document.querySelectorAll('.menu').forEach(menu => menu.style.display = 'none');
+      }
+    });
+  </script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.js"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.js.map"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.min.js"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.bundle.min.js.map"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.js"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.js.map"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.min.js"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.esm.min.js.map"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.js"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.js.map"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.min.js"></script>
+     <script src="bootstrap-5.3.7-dist\bootstrap-5.3.7-dist\js\bootstrap.min.js.map"></script>
+</body>
+
+</html>
+
+
